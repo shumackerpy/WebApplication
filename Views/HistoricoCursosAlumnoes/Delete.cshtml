@@ -1,0 +1,43 @@
+﻿@model Aplicacion.Models.HistoricoCursosAlumno
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<br />
+
+<div class="text-center">
+    <h2>Eliminar Registro</h2>
+</div>
+
+
+
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.FechaRegistro)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.FechaRegistro)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.IdAlumnoNavigation)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.IdAlumnoNavigation.NombreCompleto)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.IdCursoNavigation)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.IdCursoNavigation.Nombre)
+        </dd>
+    </dl>
+
+    <div class="col-md-offset-2 col-md-10">
+        <form asp-action="Delete">
+            <input type="hidden" asp-for="Id" />
+            <input type="submit" value="Delete" class="btn btn-danger" /> |
+            <a asp-action="Index" class="btn btn-warning">Volver</a>
+        </form>
+</div>

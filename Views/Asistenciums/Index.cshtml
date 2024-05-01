@@ -1,0 +1,175 @@
+﻿@model IEnumerable<Aplicacion.Models.Curso>
+
+@{
+    ViewData["Title"] = "Index";
+    List<Asistencium> asistenciaList = new List<Asistencium>();
+}
+
+<br />
+
+<div class="text-center">
+    <h2>Asistencia</h2>
+</div>
+
+<hr />
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Nombre)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Tipo)
+            </th>
+            <th>Asistencia</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Nombre)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Tipo)
+                </td>
+
+                <td>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary editar-btn"
+                            data-bs-toggle="modal" data-bs-target="#exampleModal_@item.Id"
+                            data-id="@item.Id">
+
+                        <i class="bi bi-person-check"></i>
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal_@item.Id" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Registro de asistencia</h5>
+                                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <form asp-action="Create" class="form">
+                                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                                        <input type="hidden" id="cursoId" name="cursoId" value="@item.Id" />
+
+                                        <div class="form-group d-flex align-items-center">
+                                            <input type="date"  id="fecha" class="form-control" name="fecha" placeholder="Seleccione una fecha" />
+                                            <input type="button" class="form-control ml-2 btn btn-info btnCargar" value="Cargar @item.Id" data-cursoId="@item.Id"  />
+                                        </div>
+
+                                        <table id="asistenciaTable" class="table">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">Alumnos</th>
+                                                    <th scope="col">Registrar</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                @foreach (var alumno in item.HistoricoCursosAlumnos)
+                                                {
+
+
+
+                                                    <tr>
+                                                        <th scope="row">@alumno.IdAlumnoNavigation.NombreCompleto</th>
+                                                        <td>
+                                                            <input type="hidden" name="asistenciaList[@alumno.IdAlumno].IdAlumno" value="@alumno.IdAlumno" />
+                                                            <input type="checkbox" name="asistenciaList[@alumno.IdAlumno].Estado" value="true" />
+                                                        </td>
+                                                    </tr>
+                                                }
+                                            </tbody>
+                                        </table>
+
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                            <input type="submit" name="btnguardar" value="Guardar" class="btn btn-primary" />
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+            // Controlador de eventos clic para todos los botones de clase .btnCargar
+            $(document).on('click', '.btnCargar', function () {
+                // Obtener el cursoId del atributo de datos
+                var cursoId = $(this).closest('.modal').find('input[name="cursoId"]').val();
+                var fecha = $(this).closest('.modal').find('input[name="fecha"]').val();
+
+                // Realizar la solicitud AJAX
+                $.ajax({
+                    type: 'GET',
+                    url: '@Url.Action("GetAsistencia", "Asistenciums")',
+                    data: { cursoId: cursoId, fecha: fecha },
+                    dataType: 'json',
+                    success: function (data) {
+                        console.log(data)
+                        $.each(data.data, function (index, item) {
+                           
+                            var checkbox = $('input[name="asistenciaList[' + item.idAlumno + '].Estado"]');
+                            checkbox.prop('checked', item.estado);
+                        });
+                        var btnGuardar = $('input[name="btnguardar"]');
+                        btnGuardar.prop('disabled', data.estado);
+
+
+
+                    }, error: function (xhr, status, error) {
+                        console.error(xhr.responseText); // Imprimir el mensaje de error en la consola
+                        alert('Se produjo un error al cargar la asistencia.'); // Mostrar una alerta al usuario
+                    }
+                });
+            });
+
+        });
+    </script>
+}
+
+
+@* @section Scripts {
+    <script>
+        // Controlador de eventos clic para el botón #btnCargar
+        $('#btnCargar' + $(this).data('cursoId')).click(function () {
+            // Obtener el cursoId del atributo de datos
+            var cursoId = $(this).data('cursoId');
+            console.log(cursoId)
+            var fecha = $('#fecha').val();
+
+            // Realizar la solicitud AJAX
+            $.ajax({
+                type: 'GET',
+                url: '@Url.Action("GetAsistencia", "Asistenciums")',
+                data: { cursoId: cursoId, fecha: fecha },
+                dataType: 'json',
+                success: function (data) {
+                    $.each(data, function (index, item) {
+                        var checkbox = $('input[name="asistenciaList[' + item.IdAlumno + '].Estado"]');
+                        checkbox.prop('checked', item.Estado);
+                    });
+                }, error: function (xhr, status, error) {
+                    console.error(xhr.responseText); // Imprimir el mensaje de error en la consola
+                    alert('Se produjo un error al cargar la asistencia.'); // Mostrar una alerta al usuario
+                }
+            });
+        });
+
+    </script> *@
+}

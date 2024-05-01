@@ -1,0 +1,47 @@
+﻿@model Aplicacion.Models.HistoricoCursosAlumno
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<br />
+
+<div class="text-center">
+    <h2>Crear Registro</h2>
+</div>
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            
+            <div class="form-group">
+                <label asp-for="IdAlumno" class="control-label"></label>
+                <select asp-for="IdAlumno" class ="form-control" asp-items="ViewBag.IdAlumno"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="IdCurso" class="control-label"></label>
+                <select asp-for="IdCurso" class ="form-control" asp-items="ViewBag.IdCurso"></select>
+            </div>
+            @* <div class="form-group">
+                <label asp-for="FechaRegistro" class="control-label"></label>
+                <input asp-for="FechaRegistro" class="form-control" />
+                <span asp-validation-for="FechaRegistro" class="text-danger"></span>
+            </div> *@
+
+            <br />
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-10">
+                    <input type="submit" value="Save" class="btn btn-success" /> |
+                    <a asp-action="Index" class="btn btn-warning"> Volver </a>
+                </div>  
+            </div>
+        </form>
+    </div>
+</div>
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

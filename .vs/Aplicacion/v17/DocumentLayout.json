@@ -1,0 +1,408 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Opret\\Aplicacion\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C0078251-B8B5-4292-9AD7-16C87C4BBD41}|Aplicacion.csproj|c:\\opret\\aplicacion\\views\\asistenciums\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C0078251-B8B5-4292-9AD7-16C87C4BBD41}|Aplicacion.csproj|solutionrelative:views\\asistenciums\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0078251-B8B5-4292-9AD7-16C87C4BBD41}|Aplicacion.csproj|c:\\opret\\aplicacion\\controllers\\asistenciumscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C0078251-B8B5-4292-9AD7-16C87C4BBD41}|Aplicacion.csproj|solutionrelative:controllers\\asistenciumscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0078251-B8B5-4292-9AD7-16C87C4BBD41}|Aplicacion.csproj|c:\\opret\\aplicacion\\models\\asistencium.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C0078251-B8B5-4292-9AD7-16C87C4BBD41}|Aplicacion.csproj|solutionrelative:models\\asistencium.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0078251-B8B5-4292-9AD7-16C87C4BBD41}|Aplicacion.csproj|c:\\opret\\aplicacion\\controllers\\alumnoescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C0078251-B8B5-4292-9AD7-16C87C4BBD41}|Aplicacion.csproj|solutionrelative:controllers\\alumnoescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0078251-B8B5-4292-9AD7-16C87C4BBD41}|Aplicacion.csproj|c:\\opret\\aplicacion\\views\\cursoes\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C0078251-B8B5-4292-9AD7-16C87C4BBD41}|Aplicacion.csproj|solutionrelative:views\\cursoes\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0078251-B8B5-4292-9AD7-16C87C4BBD41}|Aplicacion.csproj|c:\\opret\\aplicacion\\models\\historicocursosalumno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C0078251-B8B5-4292-9AD7-16C87C4BBD41}|Aplicacion.csproj|solutionrelative:models\\historicocursosalumno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0078251-B8B5-4292-9AD7-16C87C4BBD41}|Aplicacion.csproj|c:\\opret\\aplicacion\\models\\dbpruebacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C0078251-B8B5-4292-9AD7-16C87C4BBD41}|Aplicacion.csproj|solutionrelative:models\\dbpruebacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0078251-B8B5-4292-9AD7-16C87C4BBD41}|Aplicacion.csproj|c:\\opret\\aplicacion\\controllers\\historicocursosalumnoescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C0078251-B8B5-4292-9AD7-16C87C4BBD41}|Aplicacion.csproj|solutionrelative:controllers\\historicocursosalumnoescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0078251-B8B5-4292-9AD7-16C87C4BBD41}|Aplicacion.csproj|c:\\opret\\aplicacion\\controllers\\historicocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C0078251-B8B5-4292-9AD7-16C87C4BBD41}|Aplicacion.csproj|solutionrelative:controllers\\historicocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0078251-B8B5-4292-9AD7-16C87C4BBD41}|Aplicacion.csproj|c:\\opret\\aplicacion\\views\\cursoes\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C0078251-B8B5-4292-9AD7-16C87C4BBD41}|Aplicacion.csproj|solutionrelative:views\\cursoes\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0078251-B8B5-4292-9AD7-16C87C4BBD41}|Aplicacion.csproj|c:\\opret\\aplicacion\\views\\alumnoes\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C0078251-B8B5-4292-9AD7-16C87C4BBD41}|Aplicacion.csproj|solutionrelative:views\\alumnoes\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0078251-B8B5-4292-9AD7-16C87C4BBD41}|Aplicacion.csproj|c:\\opret\\aplicacion\\views\\alumnoes\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C0078251-B8B5-4292-9AD7-16C87C4BBD41}|Aplicacion.csproj|solutionrelative:views\\alumnoes\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0078251-B8B5-4292-9AD7-16C87C4BBD41}|Aplicacion.csproj|c:\\opret\\aplicacion\\models\\alumno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C0078251-B8B5-4292-9AD7-16C87C4BBD41}|Aplicacion.csproj|solutionrelative:models\\alumno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0078251-B8B5-4292-9AD7-16C87C4BBD41}|Aplicacion.csproj|c:\\opret\\aplicacion\\views\\historicocursosalumnoes\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C0078251-B8B5-4292-9AD7-16C87C4BBD41}|Aplicacion.csproj|solutionrelative:views\\historicocursosalumnoes\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0078251-B8B5-4292-9AD7-16C87C4BBD41}|Aplicacion.csproj|c:\\opret\\aplicacion\\views\\historicocursosalumnoes\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C0078251-B8B5-4292-9AD7-16C87C4BBD41}|Aplicacion.csproj|solutionrelative:views\\historicocursosalumnoes\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0078251-B8B5-4292-9AD7-16C87C4BBD41}|Aplicacion.csproj|c:\\opret\\aplicacion\\views\\historicocursosalumnoes\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C0078251-B8B5-4292-9AD7-16C87C4BBD41}|Aplicacion.csproj|solutionrelative:views\\historicocursosalumnoes\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0078251-B8B5-4292-9AD7-16C87C4BBD41}|Aplicacion.csproj|c:\\opret\\aplicacion\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C0078251-B8B5-4292-9AD7-16C87C4BBD41}|Aplicacion.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0078251-B8B5-4292-9AD7-16C87C4BBD41}|Aplicacion.csproj|c:\\opret\\aplicacion\\views\\historico\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C0078251-B8B5-4292-9AD7-16C87C4BBD41}|Aplicacion.csproj|solutionrelative:views\\historico\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0078251-B8B5-4292-9AD7-16C87C4BBD41}|Aplicacion.csproj|c:\\opret\\aplicacion\\views\\historico\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C0078251-B8B5-4292-9AD7-16C87C4BBD41}|Aplicacion.csproj|solutionrelative:views\\historico\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0078251-B8B5-4292-9AD7-16C87C4BBD41}|Aplicacion.csproj|c:\\opret\\aplicacion\\views\\historico\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C0078251-B8B5-4292-9AD7-16C87C4BBD41}|Aplicacion.csproj|solutionrelative:views\\historico\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0078251-B8B5-4292-9AD7-16C87C4BBD41}|Aplicacion.csproj|c:\\opret\\aplicacion\\views\\historico\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C0078251-B8B5-4292-9AD7-16C87C4BBD41}|Aplicacion.csproj|solutionrelative:views\\historico\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0078251-B8B5-4292-9AD7-16C87C4BBD41}|Aplicacion.csproj|c:\\opret\\aplicacion\\datos\\dbusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C0078251-B8B5-4292-9AD7-16C87C4BBD41}|Aplicacion.csproj|solutionrelative:datos\\dbusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0078251-B8B5-4292-9AD7-16C87C4BBD41}|Aplicacion.csproj|c:\\opret\\aplicacion\\views\\cursoes\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C0078251-B8B5-4292-9AD7-16C87C4BBD41}|Aplicacion.csproj|solutionrelative:views\\cursoes\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0078251-B8B5-4292-9AD7-16C87C4BBD41}|Aplicacion.csproj|c:\\opret\\aplicacion\\views\\historicocursosalumnoes\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C0078251-B8B5-4292-9AD7-16C87C4BBD41}|Aplicacion.csproj|solutionrelative:views\\historicocursosalumnoes\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Asistencium.cs",
+              "DocumentMoniker": "C:\\Opret\\Aplicacion\\Models\\Asistencium.cs",
+              "RelativeDocumentMoniker": "Models\\Asistencium.cs",
+              "ToolTip": "C:\\Opret\\Aplicacion\\Models\\Asistencium.cs",
+              "RelativeToolTip": "Models\\Asistencium.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-25T15:17:54.322Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Opret\\Aplicacion\\Views\\Asistenciums\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Asistenciums\\Index.cshtml",
+              "ToolTip": "C:\\Opret\\Aplicacion\\Views\\Asistenciums\\Index.cshtml",
+              "RelativeToolTip": "Views\\Asistenciums\\Index.cshtml",
+              "ViewState": "AQIAAGcAAAAAAAAAAAAAAHQAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-25T15:46:26.686Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AsistenciumsController.cs",
+              "DocumentMoniker": "C:\\Opret\\Aplicacion\\Controllers\\AsistenciumsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AsistenciumsController.cs",
+              "ToolTip": "C:\\Opret\\Aplicacion\\Controllers\\AsistenciumsController.cs",
+              "RelativeToolTip": "Controllers\\AsistenciumsController.cs",
+              "ViewState": "AQIAAD4AAAAAAAAAAAAmwE0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-11T14:49:12.942Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AlumnoesController.cs",
+              "DocumentMoniker": "C:\\Opret\\Aplicacion\\Controllers\\AlumnoesController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AlumnoesController.cs",
+              "ToolTip": "C:\\Opret\\Aplicacion\\Controllers\\AlumnoesController.cs",
+              "RelativeToolTip": "Controllers\\AlumnoesController.cs",
+              "ViewState": "AQIAAC8AAAAAAAAAAAAAAD4AAABvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-16T03:07:41.353Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Opret\\Aplicacion\\Views\\Cursoes\\Create.cshtml",
+              "RelativeDocumentMoniker": "Views\\Cursoes\\Create.cshtml",
+              "ToolTip": "C:\\Opret\\Aplicacion\\Views\\Cursoes\\Create.cshtml",
+              "RelativeToolTip": "Views\\Cursoes\\Create.cshtml",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAAD8AAABBAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-09T16:03:15.98Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "HistoricoController.cs",
+              "DocumentMoniker": "C:\\Opret\\Aplicacion\\Controllers\\HistoricoController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HistoricoController.cs",
+              "ToolTip": "C:\\Opret\\Aplicacion\\Controllers\\HistoricoController.cs",
+              "RelativeToolTip": "Controllers\\HistoricoController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-11T15:51:57.591Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "HistoricoCursosAlumno.cs",
+              "DocumentMoniker": "C:\\Opret\\Aplicacion\\Models\\HistoricoCursosAlumno.cs",
+              "RelativeDocumentMoniker": "Models\\HistoricoCursosAlumno.cs",
+              "ToolTip": "C:\\Opret\\Aplicacion\\Models\\HistoricoCursosAlumno.cs",
+              "RelativeToolTip": "Models\\HistoricoCursosAlumno.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-09T15:16:23.638Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DBPRUEBAContext.cs",
+              "DocumentMoniker": "C:\\Opret\\Aplicacion\\Models\\DBPRUEBAContext.cs",
+              "RelativeDocumentMoniker": "Models\\DBPRUEBAContext.cs",
+              "ToolTip": "C:\\Opret\\Aplicacion\\Models\\DBPRUEBAContext.cs",
+              "RelativeToolTip": "Models\\DBPRUEBAContext.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAuwBQAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-11T14:29:02.129Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "HistoricoCursosAlumnoesController.cs",
+              "DocumentMoniker": "C:\\Opret\\Aplicacion\\Controllers\\HistoricoCursosAlumnoesController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HistoricoCursosAlumnoesController.cs",
+              "ToolTip": "C:\\Opret\\Aplicacion\\Controllers\\HistoricoCursosAlumnoesController.cs",
+              "RelativeToolTip": "Controllers\\HistoricoCursosAlumnoesController.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAADYAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-09T15:51:19.923Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Opret\\Aplicacion\\Views\\Cursoes\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Cursoes\\Index.cshtml",
+              "ToolTip": "C:\\Opret\\Aplicacion\\Views\\Cursoes\\Index.cshtml",
+              "RelativeToolTip": "Views\\Cursoes\\Index.cshtml",
+              "ViewState": "AQIAAIIAAAAAAAAAAAAwwJ0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-16T02:26:09.686Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Alumno.cs",
+              "DocumentMoniker": "C:\\Opret\\Aplicacion\\Models\\Alumno.cs",
+              "RelativeDocumentMoniker": "Models\\Alumno.cs",
+              "ToolTip": "C:\\Opret\\Aplicacion\\Models\\Alumno.cs",
+              "RelativeToolTip": "Models\\Alumno.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABYAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-09T15:35:11.449Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Opret\\Aplicacion\\Views\\Alumnoes\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Alumnoes\\Index.cshtml",
+              "ToolTip": "C:\\Opret\\Aplicacion\\Views\\Alumnoes\\Index.cshtml",
+              "RelativeToolTip": "Views\\Alumnoes\\Index.cshtml",
+              "ViewState": "AQIAAIkAAAAAAAAAAAAuwEkAAAA6AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-16T02:33:14.967Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Opret\\Aplicacion\\Views\\Alumnoes\\Create.cshtml",
+              "RelativeDocumentMoniker": "Views\\Alumnoes\\Create.cshtml",
+              "ToolTip": "C:\\Opret\\Aplicacion\\Views\\Alumnoes\\Create.cshtml",
+              "RelativeToolTip": "Views\\Alumnoes\\Create.cshtml",
+              "ViewState": "AQIAACQAAAAAAAAAAAAAADYAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-16T04:09:27.316Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Opret\\Aplicacion\\Views\\HistoricoCursosAlumnoes\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Views\\HistoricoCursosAlumnoes\\Edit.cshtml",
+              "ToolTip": "C:\\Opret\\Aplicacion\\Views\\HistoricoCursosAlumnoes\\Edit.cshtml",
+              "RelativeToolTip": "Views\\HistoricoCursosAlumnoes\\Edit.cshtml",
+              "ViewState": "AQIAABcAAAAAAAAAAAAwwCgAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-09T15:36:39.477Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Opret\\Aplicacion\\Views\\HistoricoCursosAlumnoes\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\HistoricoCursosAlumnoes\\Index.cshtml",
+              "ToolTip": "C:\\Opret\\Aplicacion\\Views\\HistoricoCursosAlumnoes\\Index.cshtml",
+              "RelativeToolTip": "Views\\HistoricoCursosAlumnoes\\Index.cshtml",
+              "ViewState": "AQIAAGwAAAAAAAAAAAAuwHgAAABDAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-09T16:08:08.121Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Opret\\Aplicacion\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Opret\\Aplicacion\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAACQAAACBAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-11T15:45:38.908Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Opret\\Aplicacion\\Views\\HistoricoCursosAlumnoes\\Create.cshtml",
+              "RelativeDocumentMoniker": "Views\\HistoricoCursosAlumnoes\\Create.cshtml",
+              "ToolTip": "C:\\Opret\\Aplicacion\\Views\\HistoricoCursosAlumnoes\\Create.cshtml",
+              "RelativeToolTip": "Views\\HistoricoCursosAlumnoes\\Create.cshtml",
+              "ViewState": "AQIAABAAAAAAAAAAAAAuwCAAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-09T15:42:06.959Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Opret\\Aplicacion\\Views\\Historico\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Historico\\Index.cshtml",
+              "ToolTip": "C:\\Opret\\Aplicacion\\Views\\Historico\\Index.cshtml",
+              "RelativeToolTip": "Views\\Historico\\Index.cshtml",
+              "ViewState": "AQIAADYAAAAAAAAAAAAAADkAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-11T15:53:04.446Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Opret\\Aplicacion\\Views\\Historico\\Create.cshtml",
+              "RelativeDocumentMoniker": "Views\\Historico\\Create.cshtml",
+              "ToolTip": "C:\\Opret\\Aplicacion\\Views\\Historico\\Create.cshtml",
+              "RelativeToolTip": "Views\\Historico\\Create.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADoAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-11T18:09:56.003Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Opret\\Aplicacion\\Views\\Historico\\Delete.cshtml",
+              "RelativeDocumentMoniker": "Views\\Historico\\Delete.cshtml",
+              "ToolTip": "C:\\Opret\\Aplicacion\\Views\\Historico\\Delete.cshtml",
+              "RelativeToolTip": "Views\\Historico\\Delete.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADkAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-11T18:10:02.055Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Opret\\Aplicacion\\Views\\Historico\\Details.cshtml",
+              "RelativeDocumentMoniker": "Views\\Historico\\Details.cshtml",
+              "ToolTip": "C:\\Opret\\Aplicacion\\Views\\Historico\\Details.cshtml",
+              "RelativeToolTip": "Views\\Historico\\Details.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADYAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-11T18:10:08.173Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Opret\\Aplicacion\\Views\\Cursoes\\Delete.cshtml",
+              "RelativeDocumentMoniker": "Views\\Cursoes\\Delete.cshtml",
+              "ToolTip": "C:\\Opret\\Aplicacion\\Views\\Cursoes\\Delete.cshtml",
+              "RelativeToolTip": "Views\\Cursoes\\Delete.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADoAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-09T16:11:55.665Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Opret\\Aplicacion\\Views\\HistoricoCursosAlumnoes\\Delete.cshtml",
+              "RelativeDocumentMoniker": "Views\\HistoricoCursosAlumnoes\\Delete.cshtml",
+              "ToolTip": "C:\\Opret\\Aplicacion\\Views\\HistoricoCursosAlumnoes\\Delete.cshtml",
+              "RelativeToolTip": "Views\\HistoricoCursosAlumnoes\\Delete.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-09T15:59:42.618Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "DBUsuario.cs",
+              "DocumentMoniker": "C:\\Opret\\Aplicacion\\Datos\\DBUsuario.cs",
+              "RelativeDocumentMoniker": "Datos\\DBUsuario.cs",
+              "ToolTip": "C:\\Opret\\Aplicacion\\Datos\\DBUsuario.cs",
+              "RelativeToolTip": "Datos\\DBUsuario.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-11T14:28:52.953Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

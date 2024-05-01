@@ -1,0 +1,232 @@
+﻿@model IEnumerable<Aplicacion.Models.Curso>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<br />
+
+<div class="text-center">
+    <h2>Listado de Cursos</h2>
+</div>
+
+<hr />
+
+<p>
+    <a asp-action="Create" class="btn btn-success">Crear</a>
+</p>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Nombre)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Tipo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TituloObtenido)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Horario)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FechaInicio)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FechaTermino)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Nombre)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Tipo)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TituloObtenido)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Horario)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FechaInicio)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FechaTermino)
+                </td>
+                <td>
+
+                    <!-- Button trigger modal editar -->
+                    <button type="button" class="btn btn-warning editar-btn"
+                            data-bs-toggle="modal" data-bs-target="#exampleModal"
+                            data-id="@item.Id"
+                            data-nombre="@item.Nombre"
+                            data-tipo="@item.Tipo"
+                            data-tituloobtenido="@item.TituloObtenido"
+                            data-horario="@item.Horario"
+                            data-fechainicio="@item.FechaInicio"
+                            data-fechatermino="@item.FechaTermino">
+                        <i class="bi bi-pencil"></i>
+                    </button> 
+                    <button type="button" class="btn btn-danger eliminar-btn"
+                            data-bs-toggle="modal" data-bs-target="#exampleModal"
+                            data-id="@item.Id">
+                        <i class="bi bi-trash"></i>
+                    </button>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Editar Curso</h5>
+                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                <form id="editForm" method="post" asp-action="Edit">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <input type="hidden" name="Id" id="Id" /> <!-- Cambiado a name y añadido id -->
+                    <div class="form-group">
+                        <label for="Nombre" class="control-label">Nombre</label> <!-- Cambiado a for y quitar asp-for -->
+                        <input type="text" name="Nombre" id="Nombre" class="form-control" />
+                        <span class="text-danger"></span> <!-- Reemplazar asp-validation-for -->
+                    </div>
+                    <!-- Repite el mismo proceso para los otros campos -->
+                    <div class="form-group">
+                        <label for="Tipo" class="control-label">Tipo</label>
+                        <input type="text" name="Tipo" id="Tipo" class="form-control" />
+                        <span class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="TituloObtenido" class="control-label">Titulo Obtenido</label>
+                        <input type="text" name="TituloObtenido" id="TituloObtenido" class="form-control" />
+                        <span class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="Horario" class="control-label">Horario</label>
+                        <input type="text" name="Horario" id="Horario" class="form-control" />
+                        <span class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="FechaInicio" class="control-label">Fecha Inicio</label>
+                        <input type="text" name="FechaInicio" id="FechaInicio" class="form-control" />
+                        <span class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="FechaTermino" class="control-label">Fecha Termino</label>
+                        <input type="text" name="FechaTermino" id="FechaTermino" class="form-control" />
+                        <span class="text-danger"></span>
+                    </div>
+                    <br />
+                    <div class="form-group">
+                        <div class="col-md-offset-2 col-md-10">
+                            <input type="submit" value="Guardar" class="btn btn-success" /> |
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        </div>
+                    </div>
+                </form>
+                <!-- Formulario de Eliminación -->
+                <form id="deleteForm" method="post" asp-action="Delete">
+                    <div class="alert alert-danger" role="alert">
+                        ¿Está seguro de que desea eliminar este registro?
+                    </div>
+                    <input type="hidden" name="Id" id="IdDelete" />
+                    <div class="modal-footer">
+                        <input type="submit" value="Eliminar" class="btn btn-danger" />
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div
+
+
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+            $('.editar-btn').click(function () {
+                var id = $(this).data('id');
+                var nombre = $(this).data('nombre');
+                var tipo = $(this).data('tipo');
+                var tituloobtenido = $(this).data('tituloobtenido');
+                var horario = $(this).data('horario');
+                var fechainicio = $(this).data('fechainicio');
+                var fechatermino = $(this).data('fechatermino');
+
+                $('#Id').val(id);
+                $('#Nombre').val(nombre);
+                $('#Tipo').val(tipo);
+                $('#TituloObtenido').val(tituloobtenido);
+                $('#Horario').val(horario);
+                $('#FechaInicio').val(fechainicio);
+                $('#FechaTermino').val(fechatermino);
+
+                // Cambiar el título del modal
+                $('#exampleModalLabel').text('Editar Curso');
+
+                // Ocultar formulario de eliminación
+                $('#deleteForm').hide();
+                // Mostrar formulario de edición
+                $('#editForm').show();
+            });
+
+            $('.eliminar-btn').click(function () {
+                var id = $(this).data('id');
+                $('#IdDelete').val(id);
+
+                // Cambiar el título del modal
+                $('#exampleModalLabel').text('Eliminar Curso');
+
+                // Ocultar formulario de edición
+                $('#editForm').hide();
+                // Mostrar formulario de eliminación
+                $('#deleteForm').show();
+            });
+
+            $('#editForm').submit(function (e) {
+                e.preventDefault();
+
+                $.ajax({
+                    url: $(this).attr('action'),
+                    type: 'post',
+                    data: $(this).serialize(),
+                    success: function (response) {
+                        $('#exampleModal').modal('hide');
+                        location.reload(); // Recarga la página para reflejar los cambios
+                    }
+                });
+            });
+
+            $('#deleteForm').submit(function (e) {
+                e.preventDefault();
+
+                $.ajax({
+                    url: $(this).attr('action'),
+                    type: 'post',
+                    data: $(this).serialize(),
+                    success: function (response) {
+                        $('#exampleModal').modal('hide');
+                        location.reload(); // Recarga la página para reflejar los cambios
+                    }
+                });
+            });
+        });
+    </script>
+}

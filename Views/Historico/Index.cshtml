@@ -1,0 +1,73 @@
+﻿@model IEnumerable<Aplicacion.Models.Curso>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<br />
+
+<div class="text-center">
+    <h2>Historico</h2>
+</div>
+
+<hr />
+
+@* <p>
+    <a asp-action="Create">Create New</a>
+</p> *@
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Nombre)
+            </th>
+            @* <th>
+                @Html.DisplayNameFor(model => model.Tipo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TituloObtenido)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Horario)
+            </th>
+            *@
+            <th>
+                @Html.DisplayNameFor(model => model.FechaInicio)
+            </th> 
+            <th>
+                @Html.DisplayNameFor(model => model.FechaTermino)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nombre)
+            </td>
+            @* <td>
+                @Html.DisplayFor(modelItem => item.Tipo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TituloObtenido)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Horario)
+            </td>
+            *@
+            <td>
+                @Html.DisplayFor(modelItem => item.FechaInicio)
+            </td> 
+            <td>
+                @Html.DisplayFor(modelItem => item.FechaTermino)
+            </td>
+            @* <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+            </td> *@
+        </tr>
+}
+    </tbody>
+</table>

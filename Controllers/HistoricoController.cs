@@ -6,9 +6,12 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Aplicacion.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Aplicacion.Controllers
 {
+
+    [Authorize]
     public class HistoricoController : Controller
     {
         private readonly DBPRUEBAContext _context;

@@ -198,10 +198,7 @@ namespace Aplicacion.Models
                 entity.Property(e => e.Nombre)
                     .HasMaxLength(50)
                     .IsUnicode(false);
-
-                entity.Property(e => e.Token)
-                    .HasMaxLength(200)
-                    .IsUnicode(false);
+                
             });
 
             OnModelCreatingPartial(modelBuilder);

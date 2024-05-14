@@ -8,7 +8,7 @@
 <br />
 
 <div class="text-center">
-    <h2>Asistencia</h2>
+    <h2>Registro de Asistencia</h2>
 </div>
 
 <hr />
@@ -63,7 +63,7 @@
 
                                         <div class="form-group d-flex align-items-center">
                                             <input type="date"  id="fecha" class="form-control" name="fecha" placeholder="Seleccione una fecha" />
-                                            <input type="button" class="form-control ml-2 btn btn-info btnCargar" value="Cargar @item.Id" data-cursoId="@item.Id"  />
+                                            @* <input type="button" class="form-control ml-2 btn btn-info btnCargar" value="Cargar @item.Id" data-cursoId="@item.Id"  /> *@ @* boton de buscar las asistencia por fecha *@
                                         </div>
 
                                         <table id="asistenciaTable" class="table">
@@ -91,8 +91,11 @@
                                         </table>
 
                                         <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                                            <input type="submit" name="btnguardar" value="Guardar" class="btn btn-primary" />
+                                            <button type="submit" name="btnguardar" value="Guardar" class="btn btn-primary" />
+                                            <i class="bi bi-check"></i>
+
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"> <i class="bi bi-x"></i> </button>
+
                                         </div>
                                     </form>
                                 </div>
@@ -107,12 +110,19 @@
 
 @section Scripts {
     <script>
-        $(document).ready(function () {
-            // Controlador de eventos clic para todos los botones de clase .btnCargar
-            $(document).on('click', '.btnCargar', function () {
-                // Obtener el cursoId del atributo de datos
-                var cursoId = $(this).closest('.modal').find('input[name="cursoId"]').val();
-                var fecha = $(this).closest('.modal').find('input[name="fecha"]').val();
+        // $(document).ready(function () {
+        //     // Controlador de eventos clic para todos los botones de clase .btnCargar
+        //     $(document).on('click', '.btnCargar', function () {
+        //         // Obtener el cursoId del atributo de datos
+        //         var cursoId = $(this).closest('.modal').find('input[name="cursoId"]').val();
+        //         var fecha = $(this).closest('.modal').find('input[name="fecha"]').val();
+
+                //onchange en calendario
+            $(document).ready(function () {
+                $('#fecha').change(function () {
+                    // Obtener el cursoId del campo de cursoId más cercano
+                    var cursoId = $(this).closest('form').find('input[name="cursoId"]').val();
+                    var fecha = $(this).val();
 
                 // Realizar la solicitud AJAX
                 $.ajax({
@@ -172,4 +182,4 @@
         });
 
     </script> *@
-}
+

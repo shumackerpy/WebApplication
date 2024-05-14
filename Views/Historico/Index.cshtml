@@ -7,7 +7,7 @@
 <br />
 
 <div class="text-center">
-    <h2>Historico</h2>
+    <h2>Historico de Cursos</h2>
 </div>
 
 <hr />
@@ -44,7 +44,7 @@
 @foreach (var item in Model) {
         <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.Nombre)
+                <div class="mb-3">@Html.DisplayFor(modelItem => item.Nombre)
             </td>
             @* <td>
                 @Html.DisplayFor(modelItem => item.Tipo)
@@ -57,10 +57,10 @@
             </td>
             *@
             <td>
-                @Html.DisplayFor(modelItem => item.FechaInicio)
+                <div class="mb-3">@Html.DisplayFor(modelItem => item.FechaInicio)
             </td> 
             <td>
-                @Html.DisplayFor(modelItem => item.FechaTermino)
+                <div class="mb-3">@Html.DisplayFor(modelItem => item.FechaTermino)
             </td>
             @* <td>
                 <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
